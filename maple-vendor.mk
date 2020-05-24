@@ -1765,12 +1765,10 @@ PRODUCT_COPY_FILES += \
 
 # Framework jars
 PRODUCT_COPY_FILES += \
-	vendor/sony/maple/proprietary/com.sonymobile.album.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.sonymobile.album.jar \
-	vendor/sony/maple/proprietary/com.sonymobile.album.internal.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.sonymobile.album.internal.jar \
-	vendor/sony/maple/proprietary/com.sony.device.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.sony.device.jar \
-	vendor/sony/maple/proprietary/com.sonyericsson.music.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.sonyericsson.music.jar
-
-
+	vendor/sony/maple/proprietary/framework/com.sonymobile.album.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.sonymobile.album.jar \
+	vendor/sony/maple/proprietary/framework/com.sonymobile.album.internal.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.sonymobile.album.internal.jar \
+	vendor/sony/maple/proprietary/framework/com.sony.device.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.sony.device.jar \
+	vendor/sony/maple/proprietary/framework/com.sonyericsson.music.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.sonyericsson.music.jar
 
 PRODUCT_PACKAGES += \
     com.quicinc.cne.api@1.0 \
