@@ -1748,6 +1748,30 @@ PRODUCT_COPY_FILES += \
     vendor/sony/maple/proprietary/vendor/radio/qcril_database/upgrade/upgrade/2_version_add_wps_config.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/upgrade/2_version_add_wps_config.sql \
     vendor/sony/maple/proprietary/vendor/radio/qcril_database/upgrade/upgrade/3_version_update_wps_config.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/upgrade/3_version_update_wps_config.sql
 
+# Permissions for Hotword
+PRODUCT_COPY_FILES += \
+    vendor/sony/maple/proprietary/etc/permissions/privapp-permissions-xGoogleHEXAGON.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-xGoogleHEXAGON.xml \
+    vendor/sony/maple/proprietary/etc/permissions/privapp-permissions-OkGoogleHEXAGON.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-OkGoogleHEXAGON.xml \
+    vendor/sony/maple/proprietary/etc/permissions/privapp-permissions-xGoogleHEXAGON.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/privapp-permissions-xGoogleHEXAGON.xml \
+    vendor/sony/maple/proprietary/etc/permissions/privapp-permissions-OkGoogleHEXAGON.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/privapp-permissions-OkGoogleHEXAGON.xml \
+    vendor/sony/maple/proprietary/etc/permissions/privapp-permissions-xGoogleHEXAGON.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-xGoogleHEXAGON.xml \
+    vendor/sony/maple/proprietary/etc/permissions/privapp-permissions-OkGoogleHEXAGON.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-OkGoogleHEXAGON.xml
+
+# Permissions for Sony
+PRODUCT_COPY_FILES += \
+	vendor/sony/maple/proprietary/etc/permissions/com.sonymobile.album.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.sonymobile.album.xml \
+	vendor/sony/maple/proprietary/etc/permissions/com.sonymobile.album.internal.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.sonymobile.album.internal.xml \
+	vendor/sony/maple/proprietary/etc/permissions/com.sony.device.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.sony.device.xml
+
+# Framework jars
+PRODUCT_COPY_FILES += \
+	vendor/sony/maple/proprietary/com.sonymobile.album.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.sonymobile.album.jar \
+	vendor/sony/maple/proprietary/com.sonymobile.album.internal.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.sonymobile.album.internal.jar \
+	vendor/sony/maple/proprietary/com.sony.device.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.sony.device.jar \
+	vendor/sony/maple/proprietary/com.sonyericsson.music.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.sonyericsson.music.jar
+
+
+
 PRODUCT_PACKAGES += \
     com.quicinc.cne.api@1.0 \
     com.quicinc.cne.api@1.1 \
@@ -1768,4 +1792,9 @@ PRODUCT_PACKAGES += \
     libta \
     libthermalclient \
     libtime_genoff \
-    TimeService
+    TimeService \
+    HotwordEnrollmentOKGoogleHEXAGON \
+    HotwordEnrollmentXGoogleHEXAGON \
+    SemcMusic \
+    libsmwrapper \
+    libmulawdec
