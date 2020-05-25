@@ -1,4 +1,5 @@
 # Copyright (C) 2017-2020 The LineageOS Project
+# Copyright (C) 2017-2020 The PixelExperience Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,68 +17,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := SemcCameraUI-xxhdpi-release
-LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := proprietary/priv-app/$(LOCAL_MODULE)/$(LOCAL_MODULE).apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_CLASS := APPS
-LOCAL_PRIVILEGED_MODULE := true
-LOCAL_OVERRIDES_PACKAGES := SnapdragonCamera Camera2 Snap Snap2
-include $(BUILD_PREBUILT)
+ifeq ($(TARGET_DEVICE),maple)
 
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := HotwordEnrollmentXGoogleHEXAGON
-LOCAL_SRC_FILES := proprietary/priv-app/$(LOCAL_MODULE)/$(LOCAL_MODULE).apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_PRODUCT_MODULE := true
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := HotwordEnrollmentOKGoogleHEXAGON
-LOCAL_SRC_FILES := proprietary/priv-app/$(LOCAL_MODULE)/$(LOCAL_MODULE).apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_PRODUCT_MODULE := true
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := SemcMusic
-LOCAL_SRC_FILES := proprietary/priv-app/$(LOCAL_MODULE)/$(LOCAL_MODULE).apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_PRODUCT_MODULE := false
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
-include $(BUILD_PREBUILT)
-
-
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := libsmwrapper
-LOCAL_SRC_FILES := proprietary/lib/libsmwrapper.so
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_TAGS := optional
-LOCAL_VENDOR_MODULE := true
-LOCAL_MULTILIB := 32
-LOCAL_MODULE_SUFFIX := .so
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := libmulawdec
-LOCAL_SRC_FILES := proprietary/lib/libmulawdec.so
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_TAGS := optional
-LOCAL_VENDOR_MODULE := true
-LOCAL_MULTILIB := 32
-LOCAL_MODULE_SUFFIX := .so
-include $(BUILD_PREBUILT)
+endif
