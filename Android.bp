@@ -1,6 +1,5 @@
 /**
  * Copyright (C) 2019-2020 The LineageOS Project
- * Copyright (C) 2019-2020 The PixelExperience Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,6 +18,48 @@
 
 soong_namespace {
 }
+
+android_app_import {
+	name: "CameraAddonPermission-release",
+	owner: "sony",
+	apk: "proprietary/app/CameraAddonPermission-release/CameraAddonPermission-release.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
+	name: "CameraCommonPermission-release",
+	owner: "sony",
+	apk: "proprietary/app/CameraCommonPermission-release/CameraCommonPermission-release.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
+	name: "CameraExtensionPermission-release",
+	owner: "sony",
+	apk: "proprietary/app/CameraExtensionPermission-release/CameraExtensionPermission-release.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
+	name: "ImageProcessorPermission-release",
+	owner: "sony",
+	apk: "proprietary/app/ImageProcessorPermission-release/ImageProcessorPermission-release.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+
 
 android_app_import {
 	name: "QtiTelephonyService",
@@ -61,9 +102,44 @@ android_app_import {
 }
 
 android_app_import {
+	name: "ArtFilterCamera-xxhdpi-release",
+	owner: "sony",
+	apk: "proprietary/priv-app/ArtFilterCamera-xxhdpi-release/ArtFilterCamera-xxhdpi-release.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
 	name: "CNEService",
 	owner: "sony",
 	apk: "proprietary/priv-app/CNEService/CNEService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+
+
+android_app_import {
+	name: "CameraCommon",
+	owner: "sony",
+	apk: "proprietary/priv-app/CameraCommon/CameraCommon.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
+	name: "CameraPanorama-release",
+	owner: "sony",
+	apk: "proprietary/priv-app/CameraPanorama-release/CameraPanorama-release.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -75,6 +151,30 @@ android_app_import {
 	name: "CustomizationSelector",
 	owner: "sony",
 	apk: "proprietary/priv-app/CustomizationSelector/CustomizationSelector.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+
+
+android_app_import {
+	name: "SomcMovieCreator-release",
+	owner: "sony",
+	apk: "proprietary/priv-app/SomcMovieCreator-release/SomcMovieCreator-release.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
+	name: "SoundPhotoCamera-xxhdpi-release",
+	owner: "sony",
+	apk: "proprietary/priv-app/SoundPhotoCamera-xxhdpi-release/SoundPhotoCamera-xxhdpi-release.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -520,7 +620,7 @@ android_app_import {
 	name: "TimeService",
 	owner: "sony",
 	apk: "proprietary/vendor/app/TimeService/TimeService.apk",
-	certificate: ":timeservice_app_cert-legacy-um",
+	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
