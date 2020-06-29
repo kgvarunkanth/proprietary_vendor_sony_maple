@@ -440,7 +440,6 @@ PRODUCT_PACKAGES += \
     embms \
     uceShimService \
     CNEService \
-    CustomizationSelector \
     HotwordEnrollmentOKGoogleWCD9340 \
     WfdService \
     dpmserviceapp \
