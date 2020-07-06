@@ -192,6 +192,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/maple/proprietary/lib/com.qualcomm.qti.uceservice@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.qualcomm.qti.uceservice@2.0.so \
     vendor/sony/maple/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
     vendor/sony/maple/proprietary/lib/com.quicinc.cne.server@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.quicinc.cne.server@1.0.so \
+    vendor/sony/maple/proprietary/lib/libbase.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libbase.so \
     vendor/sony/maple/proprietary/lib/lib-imscamera.so:$(TARGET_COPY_OUT_SYSTEM)/lib/lib-imscamera.so \
     vendor/sony/maple/proprietary/lib/lib-imsvideocodec.so:$(TARGET_COPY_OUT_SYSTEM)/lib/lib-imsvideocodec.so \
     vendor/sony/maple/proprietary/lib/lib-imsvt.so:$(TARGET_COPY_OUT_SYSTEM)/lib/lib-imsvt.so \
@@ -324,6 +325,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/maple/proprietary/lib64/com.qualcomm.qti.imscmservice@2.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/com.qualcomm.qti.imscmservice@2.1.so \
     vendor/sony/maple/proprietary/lib64/com.qualcomm.qti.uceservice@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/com.qualcomm.qti.uceservice@2.0.so \
     vendor/sony/maple/proprietary/lib64/com.quicinc.cne.server@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/com.quicinc.cne.server@1.0.so \
+    vendor/sony/maple/proprietary/lib64/libbase.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libbase.so \
     vendor/sony/maple/proprietary/lib64/lib-imscamera.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/lib-imscamera.so \
     vendor/sony/maple/proprietary/lib64/lib-imsvideocodec.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/lib-imsvideocodec.so \
     vendor/sony/maple/proprietary/lib64/lib-imsvt.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/lib-imsvt.so \
@@ -369,6 +371,10 @@ PRODUCT_COPY_FILES += \
     vendor/sony/maple/proprietary/lib64/libqti-util_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libqti-util_system.so \
     vendor/sony/maple/proprietary/lib64/libqti_performance.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libqti_performance.so \
     vendor/sony/maple/proprietary/lib64/librcc.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/librcc.so \
+    vendor/sony/maple/proprietary/vendor/lib64/android.hidl.base@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hidl.base@1.0.so \
+    vendor/sony/maple/proprietary/vendor/lib64/android.hidl.manager@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hidl.manager@1.0.so \
+    vendor/sony/maple/proprietary/vendor/lib/android.hidl.base@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hidl.base@1.0.so \
+    vendor/sony/maple/proprietary/vendor/lib/android.hidl.manager@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hidl.manager@1.0.so \
     vendor/sony/maple/proprietary/vendor/lib64/libsdm-disp-apis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-disp-apis.so \
     vendor/sony/maple/proprietary/lib64/libsdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsdsprpc_system.so \
     vendor/sony/maple/proprietary/lib64/libseccam.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libseccam.so \
@@ -1571,6 +1577,8 @@ PRODUCT_COPY_FILES += \
     vendor/sony/maple/proprietary/vendor/radio/qcril_database/upgrade/upgrade/1_version_intro.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/upgrade/1_version_intro.sql \
     vendor/sony/maple/proprietary/vendor/radio/qcril_database/upgrade/upgrade/2_version_add_wps_config.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/upgrade/2_version_add_wps_config.sql \
     vendor/sony/maple/proprietary/vendor/radio/qcril_database/upgrade/upgrade/3_version_update_wps_config.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/upgrade/3_version_update_wps_config.sql
+
+
 
 # Permissions for Hotword
 PRODUCT_COPY_FILES += \
