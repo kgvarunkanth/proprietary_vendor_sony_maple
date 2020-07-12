@@ -1626,5 +1626,6 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleHEXAGON \
     HotwordEnrollmentXGoogleHEXAGON \
     SemcMusic \
+    SemcAlbum \
     libsmwrapper \
     libmulawdec
