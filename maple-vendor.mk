@@ -448,6 +448,7 @@ PRODUCT_PACKAGES += \
     CNEService \
     HotwordEnrollmentOKGoogleWCD9340 \
     WfdService \
+    com.qualcomm.location \
     dpmserviceapp \
     ims \
     qcrilmsgtunnel \
@@ -463,7 +464,12 @@ PRODUCT_PACKAGES += \
     CameraPanorama-release \
     SemcCameraUI-xxhdpi-release \
     SomcMovieCreator-release \
-    SoundPhotoCamera-xxhdpi-release 
+    SoundPhotoCamera-xxhdpi-release \
+    TimeService \
+    HotwordEnrollmentOKGoogleHEXAGON \
+    HotwordEnrollmentXGoogleHEXAGON \
+    SemcMusic \
+    SemcAlbum 
 
 PRODUCT_COPY_FILES += \
     vendor/sony/maple/proprietary/priv-app/ArtFilterCamera-xxhdpi-release/lib/arm/libnativeeffectengine.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/ArtFilterCamera-xxhdpi-release/lib/arm/libnativeeffectengine.so \
@@ -483,6 +489,9 @@ PRODUCT_COPY_FILES += \
     vendor/sony/maple/proprietary/framework/com.sonymobile.imageprocessor.bypasscamera_impl.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.sonymobile.imageprocessor.bypasscamera_impl.jar \
     vendor/sony/maple/proprietary/etc/permissions/com.sonymobile.camera.addon.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.sonymobile.camera.addon.xml \
     vendor/sony/maple/proprietary/etc/permissions/com.sonymobile.imageprocessor.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.sonymobile.imageprocessor.xml \
+    vendor/sony/maple/proprietary/etc/permissions/privapp-permissions-com.qualcomm.location.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.qualcomm.location.xml \
+    vendor/sony/maple/proprietary/product/lib/vendor.qti.gnss@3.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.gnss@3.0.so \
+    vendor/sony/maple/proprietary/product/lib64/vendor.qti.gnss@3.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.gnss@3.0.so \
     vendor/sony/maple/proprietary/lib/libimageprocessorjni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libimageprocessorjni.so \
     vendor/sony/maple/proprietary/lib64/libimageprocessorjni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libimageprocessorjni.so \
     vendor/sony/maple/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
@@ -1622,10 +1631,5 @@ PRODUCT_PACKAGES += \
     libta \
     libthermalclient \
     libtime_genoff \
-    TimeService \
-    HotwordEnrollmentOKGoogleHEXAGON \
-    HotwordEnrollmentXGoogleHEXAGON \
-    SemcMusic \
-    SemcAlbum \
     libsmwrapper \
     libmulawdec
