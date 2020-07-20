@@ -147,17 +147,6 @@ android_app_import {
 	privileged: true,
 }
 
-android_app_import {
-	name: "SemcAlbum",
-	owner: "sony",
-	apk: "proprietary/priv-app/SemcAlbum/SemcAlbum.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
 
 android_app_import {
 	name: "SomcMovieCreator-release",
