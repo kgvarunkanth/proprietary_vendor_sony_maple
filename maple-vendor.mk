@@ -485,7 +485,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/maple/proprietary/priv-app/SoundPhotoCamera-xxhdpi-release/lib/arm/libmpo.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/SoundPhotoCamera-xxhdpi-release/lib/arm/libmpo.so \
     vendor/sony/maple/proprietary/priv-app/SoundPhotoCamera-xxhdpi-release/lib/arm/libnativebytebuffer.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/SoundPhotoCamera-xhdpi-release/lib/arm/libnativebytebuffer.so \
     vendor/sony/maple/proprietary/priv-app/SoundPhotoCamera-xxhdpi-release/lib/arm/libspf.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/SoundPhotoCamera-xxhdpi-release/lib/arm/libspf.so \
-    vendor/sony/maple/proprietary/priv-app/SemcAlbum/SemcAlbum.apk:$(TARGET_COPY_OUT_SYSTEM)/priv-app/SemcAlbum/SemcAlbum.apk \
     vendor/sony/maple/proprietary/framework/com.sonymobile.camera.addon_impl.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.sonymobile.camera.addon_impl.jar \
     vendor/sony/maple/proprietary/framework/com.sonymobile.imageprocessor.bypasscamera_impl.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.sonymobile.imageprocessor.bypasscamera_impl.jar \
     vendor/sony/maple/proprietary/etc/permissions/com.sonymobile.camera.addon.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.sonymobile.camera.addon.xml \
