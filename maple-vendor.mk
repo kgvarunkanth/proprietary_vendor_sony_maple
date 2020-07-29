@@ -23,7 +23,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/maple/proprietary/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM)/bin/dpmd \
     vendor/sony/maple/proprietary/bin/mssconfig:$(TARGET_COPY_OUT_SYSTEM)/bin/mssconfig \
     vendor/sony/maple/proprietary/bin/perfservice:$(TARGET_COPY_OUT_SYSTEM)/bin/perfservice \
-    vendor/sony/maple/proprietary/bin/sony-modem-switcher:$(TARGET_COPY_OUT_SYSTEM)/bin/sony-modem-switcher \
     vendor/sony/maple/proprietary/bin/ssr_dumper:$(TARGET_COPY_OUT_SYSTEM)/bin/ssr_dumper \
     vendor/sony/maple/proprietary/bin/startup-logger:$(TARGET_COPY_OUT_SYSTEM)/bin/startup-logger \
     vendor/sony/maple/proprietary/bin/taimport:$(TARGET_COPY_OUT_SYSTEM)/bin/taimport \
@@ -469,7 +468,8 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleHEXAGON \
     HotwordEnrollmentXGoogleHEXAGON \
     SemcMusic \
-    SemcAlbum 
+    SemcAlbum \
+    MovieCreator
 
 PRODUCT_COPY_FILES += \
     vendor/sony/maple/proprietary/priv-app/ArtFilterCamera-xxhdpi-release/lib/arm/libnativeeffectengine.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/ArtFilterCamera-xxhdpi-release/lib/arm/libnativeeffectengine.so \
