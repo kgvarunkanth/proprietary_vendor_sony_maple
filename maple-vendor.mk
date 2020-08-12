@@ -467,7 +467,9 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentXGoogleHEXAGON \
     SemcMusic \
     SemcAlbum \
-    MovieCreator
+    MovieCreator \
+    XperiaEmail \
+    XperiaKeyBoard
 
 PRODUCT_COPY_FILES += \
     vendor/sony/maple/proprietary/priv-app/ArtFilterCamera-xxhdpi-release/lib/arm/libnativeeffectengine.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/ArtFilterCamera-xxhdpi-release/lib/arm/libnativeeffectengine.so \
