@@ -447,7 +447,6 @@ PRODUCT_PACKAGES += \
     CNEService \
     HotwordEnrollmentOKGoogleWCD9340 \
     WfdService \
-    com.qualcomm.location \
     dpmserviceapp \
     ims \
     qcrilmsgtunnel \
